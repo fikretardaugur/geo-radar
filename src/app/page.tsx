@@ -700,7 +700,23 @@ export default function HomePage() {
       </main>
 
       <footer className="footer">
-        <div className="container">{t.footer}</div>
+        <div
+          className="container"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            flexWrap: "wrap",
+            gap: 12,
+          }}
+        >
+          <span>{t.footer}</span>
+          <div style={{ display: "flex", gap: 18 }}>
+            <a href="/terms">Terms of Service</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/refund">Refund Policy</a>
+          </div>
+        </div>
       </footer>
     </>
   );
